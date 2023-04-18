@@ -2,6 +2,9 @@ import os
 import shutil
 
 
+def convertBackSlash(string):
+    return string.replace("\\", "/")
+
 def copyFile(origem, dst):
     listWayDst = dst.split('/')
 
